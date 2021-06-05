@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  rstudio:
+    build: .
+    image: geo:geospatial
+    container_name: geo
+    ports:
+      - 8787:8787
+    environment:
+      PASSWORD: 1039
+      TZ: Asia/Tokyo
+    volumes:
+      - ..:/home/rstudio
+    tty: true
+    stdin_open: true
