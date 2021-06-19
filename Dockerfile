@@ -1,5 +1,5 @@
 # ベースとするイメージ（任意のrocker/*に変更可能）
-FROM rocker/geospatial:latest
+FROM rocker/tidyverse:latest
 
 # OS環境（rockerはdebianベース）に日本語ロケールを追加し切り替え
 ENV LANG ja_JP.UTF-8

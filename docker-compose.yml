@@ -3,8 +3,8 @@ version: "3"
 services:
   rstudio:
     build: .
-    image: geo:geospatial
-    container_name: geo
+    image: tidy:tidyverse
+    container_name: tidy
     ports:
       - 8787:8787
     environment:
