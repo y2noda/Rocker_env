@@ -11,7 +11,8 @@ RUN sed -i '$d' /etc/locale.gen \
 RUN /bin/bash -c "source /etc/default/locale"
 RUN ln -sf  /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 
-# 日本語フォントをインストール
+# 日本語フォントをインストール & 図のプロットするための
 RUN apt-get update && apt-get install -y \
   fonts-ipaexfont \
-  fonts-noto-cjk
+  fonts-noto-cjk \
+  libxt6
