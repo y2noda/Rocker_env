@@ -2,6 +2,7 @@ version: "3"
 
 services:
   rstudio:
+    platform: 'linux/amd64'
     build: .
     image: tidy:tidyverse
     container_name: tidy
@@ -14,3 +15,4 @@ services:
       - ..:/home/rstudio
     tty: true
     stdin_open: true
+    privileged: true
